@@ -1,0 +1,21 @@
+.player-music{
+  background-color: #0f172a !important;
+  height: 6rem ;
+  color: white;
+}
+
+.rhap_time{
+  color: white !important;
+}
+.app-logo {
+  animation: app-logo-spin infinite 10s linear
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
