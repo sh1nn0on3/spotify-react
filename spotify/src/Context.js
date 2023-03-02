@@ -13,7 +13,7 @@ export default function AppProvider({ children }) {
   };
 
   return (
-    <AppContext.Provider value={{ song, handleSong }}>
+    <AppContext.Provider value={{ song, DataSongs, handleSong }}>
       {children}
     </AppContext.Provider>
   );

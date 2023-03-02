@@ -22,7 +22,7 @@ const ListSong = () => {
             <th className="text-left">Title</th>
             <th className="w-[10%]">Author</th>
             <th className="w-[10%]">
-              <i class="fa-solid fa-download"></i>
+              <i className="fa-solid fa-download"></i>
             </th>
           </tr>
         </thead>
