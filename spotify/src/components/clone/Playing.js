@@ -1,7 +1,31 @@
-import React from 'react'
+import React, { useContext } from "react";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import { AppContext } from "../../Context";
 
-export default function Playing() {
+// import { Songs } from "../../Context";
+
+const Playing = () => {
+  const { song, handleSong } = useContext(AppContext);
+  const handleNext = () => {
+    handleSong(song.id + 1);
+  };
+  const handlePrevious = () => {
+    handleSong(song.id - 1);
+  };
   return (
-    <div>Playing</div>
-  )
-}
+    <div>
+      <AudioPlayer
+        className="player-music"
+        src={song.url}
+        layout="stacked-reverse"
+        showSkipControls={true}
+        showJumpControls={false}
+        onClickNext={handleNext}
+        onClickPrevious={handlePrevious}
+      />
+    </div>
+  );
+};
+
+export default Playing;

@@ -6,7 +6,7 @@ const App = () => {
   return (
     <AppProvider>
       <Navbar />
-      <div className="grid grid-cols-3 w-full h-[calc(100vh-12rem)] bg-teal-700 overflow-hidden">
+      <div className="grid grid-cols-3 w-full h-[calc(100vh-12rem)] bg-teal-700  overflow-hidden">
         <DetailSong />
         <ListSong />
       </div>
